@@ -1,10 +1,8 @@
 
 import './App.css'
-import Todo from './Todo'
 import Actor from './Actor'
 import Singer from './Singer'
 import BookStore from './BookStore'
-import Book from './Book'
 
 function App() {
 
@@ -32,20 +30,9 @@ function App() {
       {
         singers.map(singer=> <Singer singer={singer}></Singer>)
       }
-      <Bookstore books={books}></Bookstore>
-     {/* {
+      {
         actors.map(actor => <Actor name= {actor}></Actor>)
       }
-      {/* <Todo task="Learn React with this course" isDone={true}></Todo>
-      <Todo task="exprole the content of this course" isDone={true}></Todo>
-      <Todo task="Try Jsx regurally" isDone={false}></Todo> */}
-      {/* <Device name= "Laptop"></Device>
-      <Person></Person>
-      <Address></Address>
-      <Student name="John Doe" grade="7" score="90"></Student>
-      <Student name="ALi Khan" grade="8" score="70"></Student>
-      <Student ></Student>
-      <Developer></Developer> */}
     </>
   )
 }
